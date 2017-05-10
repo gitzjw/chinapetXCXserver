@@ -140,8 +140,8 @@ class shop
 //        $city = $userInfo->city;
         $avatar = $userInfo->avatarUrl;
         $code = $_REQUEST['code'];
-        $appid = "wx9d0d76ce43dab283";
-        $AppSecret = "04860cc568204ffdfa23dadc17025720";
+        $appid = "小程序appid@";
+        $AppSecret = "小程序私钥@";
         $url = "https://api.weixin.qq.com/sns/jscode2session?appid=" . $appid . "&secret=" . $AppSecret . "&js_code=" . $code . "&grant_type=authorization_code";
         $session = $this->urlpost($url);
         $sessionobj = json_decode($session);
